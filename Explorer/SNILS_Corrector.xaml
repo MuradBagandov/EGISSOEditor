@@ -1,0 +1,39 @@
+﻿<Window x:Class="EGISSOEditor.SNILS_Corrector"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        Title="SNILS_Corrector" Height="430.312" Width="340.938" Background="{x:Null}" ResizeMode="CanMinimize">
+
+
+
+
+    <Grid Background="#FFC7C7C7">
+        <Border Margin="10" Background="White" CornerRadius="15" Grid.ColumnSpan="2">
+            <Border.Effect>
+                <DropShadowEffect Color="#FFD1D1D1" BlurRadius="25" Direction="315"/>
+            </Border.Effect>
+            
+            <Grid Margin="10">
+                <Border Height="50" CornerRadius="10" Background="White" VerticalAlignment="Top">
+                    <Border.Effect>
+                        <DropShadowEffect x:Name="shadowTextBox" Color="#FF383838" Direction="270" BlurRadius="1" Opacity="0.5" ShadowDepth="3"/>
+                    </Border.Effect>
+                    <xctk:MaskedTextBox x:Name="tbSNILS" Mask="000-000-000 00" 
+                                        FontSize="36" TextAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF2E2E2E"
+                                        TextChanged="tbSNILS_TextChanged"/>
+                </Border>
+
+                <Border  VerticalAlignment="Bottom" Height="300" Background="#FFDCFCFF" CornerRadius="15">
+                    <StackPanel Margin="10">
+                        <TextBlock FontSize="16" TextAlignment="Center" >Возможные варинаты:</TextBlock>
+                        <TextBox x:Name="lbSNILS" IsReadOnly="True" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="30" TextAlignment="Center"/>
+                    </StackPanel>
+                </Border>
+            </Grid>
+            
+        </Border>
+    </Grid>
+</Window>

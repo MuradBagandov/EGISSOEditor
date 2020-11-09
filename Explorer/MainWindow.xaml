@@ -1,0 +1,70 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        x:Class="EGISSOEditor.MainWindow"
+        mc:Ignorable="d"
+        Title="EGISSOEditor" Height="600" Width="1000" Loaded="Window_Loaded" Background="White" Foreground="Black" Closing="Window_Closing" Icon="Resources/ProgrammICO2.png">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="45"/>
+            <RowDefinition Height="500*"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="50"/>
+
+        </Grid.RowDefinitions>
+
+
+        <Grid Grid.Column="0" Grid.ColumnSpan="4" Height="45">
+            <Rectangle Fill="#FFB6B6B6" Height="1" VerticalAlignment="Bottom"/>
+            <StackPanel Orientation="Horizontal" Panel.ZIndex="2">
+                <Button x:Name="btnAdd" ToolTip="Добавить" Width="40" Background="{x:Null}" BorderBrush="{x:Null}" Margin="0" BorderThickness="0" ClickMode="Press" Click="btnAdd_Click">
+                    <Image Width="29" Source="Resources/Add_file.png" StretchDirection="Both"/>
+                </Button>
+                <Button x:Name="btnSave" ToolTip="Сохранить" Width="40" Background="{x:Null}" BorderBrush="{x:Null}" Margin="0" BorderThickness="0" ClickMode="Press" Click="btnSave_Click">
+                    <Image Width="30" Source="Resources/Save_2.png" StretchDirection="Both"/>
+                </Button>
+                <Button x:Name="btnSaveAs" ToolTip="Сохранить как" Width="40" Background="{x:Null}" BorderBrush="{x:Null}" Margin="0" BorderThickness="0" ClickMode="Press" Click="btnSaveAs_Click">
+                    <Image Width="30" Source="Resources/Save_As_2.png" StretchDirection="Both"/>
+                </Button>
+                <Button x:Name="btnSaveAll" ToolTip="Сохранить все" Width="40" Background="{x:Null}" BorderBrush="{x:Null}" Margin="0" BorderThickness="0" ClickMode="Press" Click="btnSaveAll_Click">
+                    <Image Width="30" Source="Resources/Save_all_2.png" StretchDirection="Both"/>
+                </Button>
+                <Button x:Name="btnRemove" ToolTip="Закрыть" Width="40" Background="{x:Null}" BorderBrush="{x:Null}" Margin="0" BorderThickness="0" ClickMode="Press" Click="btnRemove_Click">
+                    <Image Width="29" Source="Resources/Close_file.png" StretchDirection="Both"/>
+                </Button>
+                <Button x:Name="btnRemoveAll" ToolTip="Закрыть все" Width="40" Background="{x:Null}" BorderBrush="{x:Null}" Margin="0" BorderThickness="0" ClickMode="Press" Click="btnRemoveAll_Click">
+                    <Image Width="29" Source="Resources/Close_files_all.png" StretchDirection="Both"/>
+                </Button>
+                <Rectangle Width="1" HorizontalAlignment="Center" Fill="#FF5D5D5D" VerticalAlignment="Center" Height="30"/>
+                <Button x:Name="PatternCorrection" ToolTip="Исправить шаблон" Width="40" Background="{x:Null}" BorderBrush="{x:Null}" Margin="0" BorderThickness="0" ClickMode="Press" Click="PatternCorrection_Click">
+                    <Image Width="29" Source="Resources/Edit_file.png" StretchDirection="Both"/>
+                </Button>
+                <Button x:Name="ErrorChecking" ToolTip="Проверить файл" Width="40" Background="{x:Null}" BorderBrush="{x:Null}" Margin="0" BorderThickness="0" ClickMode="Press" Click="ErrorChecking_Click">
+                    <Image Width="29" Source="Resources/Search_file.png" StretchDirection="Both"/>
+                </Button>
+                <Button x:Name="CombineFiles" ToolTip="Объединить файлы" Width="40" Background="{x:Null}" BorderBrush="{x:Null}" Margin="0" BorderThickness="0" ClickMode="Press" Click="CombineFiles_Click">
+                    <Image Width="33" Source="Resources/Combine_files_2.png" StretchDirection="Both">
+                        <Image.OpacityMask>
+                            <ImageBrush ImageSource="Resources/Combine_files_2.png" TileMode="FlipXY"/>
+                        </Image.OpacityMask>
+                    </Image>
+                </Button>
+                <Rectangle Width="1" HorizontalAlignment="Center" Fill="#FF5D5D5D" VerticalAlignment="Center" Height="30"/>
+                <Button x:Name="btnSNILS_Correct" ToolTip="Проверить файл" Width="40" Background="{x:Null}" BorderBrush="{x:Null}" Margin="0" BorderThickness="0" ClickMode="Press" Click="btnSNILS_Correct_Click">
+                    <Image Width="29" Source="Resources/SNILS_Correct.png" StretchDirection="Both"/>
+                </Button>
+            </StackPanel>
+        </Grid>
+
+        <ScrollViewer x:Name="ScrollView" Grid.Column="1" Grid.Row="1"/>
+
+        <Grid x:Name="StatusBar" Grid.Row="3" Grid.ColumnSpan="4" Background="#FFCCFFFF"/>
+
+        <GridSplitter Grid.ColumnSpan="4" Grid.Row="2" Height="1" 
+                      VerticalAlignment="Center" HorizontalAlignment="Stretch" Background="#FFB6B6B6"/>
+
+    </Grid>
+</Window>

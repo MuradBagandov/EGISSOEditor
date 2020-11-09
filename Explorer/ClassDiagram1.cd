@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="NameAndType">
+  <Class Name="EGISSOEditor.EGISSO">
+    <Position X="5.25" Y="0.5" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Delegate Name="EGISSOEditor.EGISSO.ActionOfLine" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>EGISSO.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAIDAAACAAAAAAAAQQAAAACAAAAAAAAAACAAhIAEQ=</HashCode>
+      <FileName>EGISSO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EGISSOEditor.ExplorerView">
+    <Position X="9.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>GAegAAAEAAEAAAIAAAIAAAAAAAAAAAAEABAAIEoAAAA=</HashCode>
+      <FileName>ExplorerView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EGISSOEditor.FileEGISSO">
+    <Position X="3.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAIAAAAAAAAQAAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>FileEGISSO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EGISSOEditor.FileEGISSOControl">
+    <Position X="8" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIQAAAEAAAIAAAAAAAgEAAQAAACAABIKCACIBAA=</HashCode>
+      <FileName>FileEGISSOControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EGISSOEditor.FolderViewElement" Collapsed="true">
+    <Position X="1.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAAAgAAAQAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>FolderView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EGISSOEditor.FolderView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="1.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAABAAAAABAAFAAAAAAAAAAgCBAAAA=</HashCode>
+      <FileName>FolderView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="EGISSOEditor.MainWindow" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAQAAAAAAIAAQBACBQBIBgAAAAAABAIBABAAAJcBBI=</HashCode>
+      <FileName>MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Struct Name="EGISSOEditor.FileState">
+    <Position X="0.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>ExplorerView.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="EGISSOEditor.GetProcessInformation">
+    <Position X="3.5" Y="5.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAIAABAAAAAAAAQEIAAABAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GetProcessInformation.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Enum Name="EGISSOEditor.ActionOnFile" Collapsed="true">
+    <Position X="0.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FileEGISSO.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>
